@@ -43,8 +43,19 @@ ls
 
 8. Crie um arquivo chamado de cliente.script com todos os comandos utilizados acima, na mesma ordem de execução.
 ```bash
-cd ..
-echo "echo \"Matheus Menezes da Costa\"" > cliente.script && echo "cat cliente01.txt" >> cliente.script && echo "echo \"Sao Bento do Sul\" >> cliente01.txt" >> cliente.script && echo "mkdir clientes" >> cliente.script && echo "ls" >> cliente.script && echo "mv cliente01.txt clientes/cliente01.txt" >> cliente.script && echo "ls" >> cliente.script && echo "cd clientes" >> cliente.script && echo "cp cliente01.txt cliente01.txt.bkp" >> cliente.script && echo "ls" >> cliente.script && echo "cat cliente01.txt.bkp" >> cliente.script && echo "rm cliente01.txt" >> cliente.script && echo "ls" >> cliente.script
+touch cliente.script
+vi cliente.script
+~echo "Matheus Menezes da Costa" > cliente.script
+~less cliente.script
+~echo "Sao Bento do Sul" >> cliente.script
+~mkdir clientes
+~cd clientes
+~cp cliente01.txt cliente01.txt.bkp
+~ls
+~cat cliente01.txt.bkp
+~rm cliente01.txt
+~ls
+:wq
 ```
 
 9. Modifique o arquivo cliente.script com o comando chmod para se tornar um arquivo executável. Execute o arquivo e confira o resultado. Para executar utilize o comando ./cliente.script. Obs: exclua a pasta clientes antes de executar o script para garantir que está funcionando corretamente.

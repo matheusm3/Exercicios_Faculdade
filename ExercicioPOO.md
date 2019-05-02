@@ -21,6 +21,9 @@ Reduzir a complexidade e aumentar a produtividade.
 ```
 
 5. O que é abstração? Cite um exemplo.
+```
+R: Isolar apenas as características principais de um objeto.
+```
 
 6. O que é classe?
 ```
