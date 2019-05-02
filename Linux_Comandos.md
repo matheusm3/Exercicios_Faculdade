@@ -55,7 +55,9 @@ rmdir clientes
 ```
 
 10. Execute o comando cal. Observe o resultado. Execute o comando echo|cal > hoje.txt. Utilize o comandos ls e less para conferir o resultado. O que ocorreu? Qual a função do operador — ?
+```
 R: Inserir o calendário em um arquivo de texto. a função do "-" é executar uma regra com o comando "cal".
+```
 ```bash
 echo | cal > hoje.txt
 ls
@@ -68,7 +70,9 @@ wget https://gist.githubusercontent.com/leandersonandre/c8cba982f42262591be628e5
 ```
 
 12. Execute o comando grep Balneario cidades_sc.txt. Qual é o resultado?
+```
 R: O conteúdo o arquivo para exibir apenas resultados constando a palavra "Balneario" em sua composição. 
+```
 ```bash
 grep Balneario cidades_sc.txt
 
@@ -79,7 +83,9 @@ Balneario Gaivota
 ```
 
 13. Execute o comando grep balneario cidades_sc.txt. Qual é o resultado?
+```
 R: Não houve resultados, por "bauneário" estar com a letra minúscula.
+```
 ```bash
 grep balneario cidades_sc.txt
 ```
