@@ -44,7 +44,7 @@ ls
 8. Crie um arquivo chamado de cliente.script com todos os comandos utilizados acima, na mesma ordem de execução.
 ```bash
 cd ..
-echo "echo \"Matheus Menezes da Costa\"" > cliente.script && echo "echo \"Matheus Menezes da Costa\" > cliente01.txt" >> cliente.script && echo "cat cliente01.txt" >> cliente.script && echo "echo \"Sao Bento do Sul\" >> cliente01.txt" >> cliente.script && echo "mkdir clientes" >> cliente.script && echo "ls" >> cliente.script && echo "mv cliente01.txt clientes/cliente01.txt" >> cliente.script && echo "ls" >> cliente.script && echo "cd clientes" >> cliente.script && echo "cp cliente01.txt cliente01.txt.bkp" >> cliente.script && echo "ls" >> cliente.script && echo "cat cliente01.txt.bkp" >> cliente.script && echo "rm cliente01.txt" >> cliente.script && echo "ls" >> cliente.script
+echo "echo \"Matheus Menezes da Costa\"" > cliente.script && echo "cat cliente01.txt" >> cliente.script && echo "echo \"Sao Bento do Sul\" >> cliente01.txt" >> cliente.script && echo "mkdir clientes" >> cliente.script && echo "ls" >> cliente.script && echo "mv cliente01.txt clientes/cliente01.txt" >> cliente.script && echo "ls" >> cliente.script && echo "cd clientes" >> cliente.script && echo "cp cliente01.txt cliente01.txt.bkp" >> cliente.script && echo "ls" >> cliente.script && echo "cat cliente01.txt.bkp" >> cliente.script && echo "rm cliente01.txt" >> cliente.script && echo "ls" >> cliente.script
 ```
 
 9. Modifique o arquivo cliente.script com o comando chmod para se tornar um arquivo executável. Execute o arquivo e confira o resultado. Para executar utilize o comando ./cliente.script. Obs: exclua a pasta clientes antes de executar o script para garantir que está funcionando corretamente.
@@ -56,7 +56,7 @@ rmdir clientes
 
 10. Execute o comando cal. Observe o resultado. Execute o comando echo|cal > hoje.txt. Utilize o comandos ls e less para conferir o resultado. O que ocorreu? Qual a função do operador — ?
 ```
-R: Inserir o calendário em um arquivo de texto. a função do "-" é executar uma regra com o comando "cal".
+R: Inserir o calendário do mês atual em um arquivo de texto. a função do "-" é executar uma regra com o comando "cal".
 ```
 ```bash
 echo | cal > hoje.txt
@@ -84,7 +84,7 @@ Balneario Gaivota
 
 13. Execute o comando grep balneario cidades_sc.txt. Qual é o resultado?
 ```
-R: Não houve resultados, por "bauneário" estar com a letra minúscula.
+R: Não houve resultados, por "bauneario" estar com a letra minúscula.
 ```
 ```bash
 grep balneario cidades_sc.txt
