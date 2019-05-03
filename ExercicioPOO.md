@@ -1,7 +1,7 @@
 #questionário
 1. O que é um objeto?
 ```
-Qualquer coisa pode ser um objeto, desde que tenha uma identidade.
+Qualquer coisa que tenha uma identidade.
 ```
 
 2. Identifique 3 características e 3 comportamentos de um carro. 
@@ -12,7 +12,7 @@ Comportamentos: em movimento, janelas abertas, ligado.
 
 3. No contexto de Orientação a Objetos, as características e comportamentos são chamados respectivamente de?
 ```
-Atributos.
+Atributos e métodos.
 ```
 
 4. Qual é o objetivo da programação orientada à objetos? 
@@ -22,31 +22,31 @@ Reduzir a complexidade e aumentar a produtividade.
 
 5. O que é abstração? Cite um exemplo.
 ```
-R: Isolar apenas as características principais de um objeto.
+R: Isolar apenas as características principais de um objeto. Como o objeto Pessoa, por exemplo, atendo-se apenas à cor dos olhos e status de movimento.
 ```
 
 6. O que é classe?
 ```
-Abstração de um grupo de objetos com características em comum.
+R: Abstração de um grupo de objetos com características em comum.
 ```
 
 7. Qual é o padrão utilizado para nomear as classes? Cite um exemplo. 
 ```
-Classes devem começar com uma letra maiúscula e sem caracteres especiais. Cadastro, por exemplo.
+R: Classes devem começar com uma letra maiúscula e sem caracteres especiais. Cadastro, por exemplo.
 ```
 
 8. Qual opção apresenta corretamente o nome da classe carro elétrico?
 ```
 1. carroeletrico
 2. carroEletrico 
-3.Carroeletrico <---
+3. Carroeletrico <---
 4. CarroEletrico 
 5. carro_eletrico
 ```
 
 9. Qual é o padrão utilizado para nomear os atributos? Cite um exemplo. 
 ```
-Nome de atributos não podem ter números em sua composição, bem como podem começar com “$” ou “ _ “.
+R: Nome de atributos não podem ter números em sua composição, bem como podem começar com “$” ou “ _ “.
 ```
 
 10. Qual opção apresenta corretamente o nome do atributo cor de fundo? 
@@ -61,6 +61,7 @@ Nome de atributos não podem ter números em sua composição, bem como podem co
 
 11. Qual é o padrão utilizado para nomear os métodos? Cite um exemplo.
 ```
+R: Sintaticamente, é bastante difundida a forma com iniciais das palavras maiúsculas, e sem espaço, e em favor da organização do código, o método deve receber o nome de acordo com a sua finalidade. fazerCafé().
 ```
 
 12. Qual opção apresenta corretamente o nome do método está vazio? 
@@ -75,22 +76,27 @@ Nome de atributos não podem ter números em sua composição, bem como podem co
 
 13. No contexto de orientação à objetos, o que é um objeto? Em que momento existe um objeto? Quando ele deixa de existir?
 ```
-Um objeto é a instância de uma classe, e ele surge partindo de sua instanciação.
+R: Um objeto é a instância de uma classe, e ele surge partindo de sua instanciação.
 ```
 
 14. Qual é o objetivo do operador new?
 ```
-Usado para instanciar um objeto novo, o new é chamado de construtor. 
+R: Usado para instanciar um objeto novo. 
 ```
 
 15. O que é o construtor? Qual é o seu objetivo? Qual deve ser o seu nome? Cite um exemplo.
+```java
+public class Suco {
+    // Características referentes ao suco
+}
 ```
-Produto Produto = new Produto();
+```
+R:
 ```
 
 16. Caso o construtor da classe Aluno não for declarado, qual será o seu construtor? 
 ```
-Construtor Padrão.
+R: Construtor Padrão.
 ```
 
 17. Crie um exemplo de instanciação da classe Aluno. Utilize o construtor padrão. 
@@ -100,7 +106,7 @@ Construtor Padrão.
 
 20. Qual é o objetivo do modificador de acesso private? 
 ```
-Privar 
+R: Privar 
 ```
 
 21. Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno com o atributo matrícula. 
