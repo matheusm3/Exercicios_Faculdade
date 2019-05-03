@@ -129,8 +129,16 @@ R: Limitar o acesso apenas
 ```
 
 21. Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno com o atributo matrícula.
-```
-
+```java
+public class Aluno {
+    private String matricula;
+    public String getMatricula() {
+        return this.matricula;
+    }
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+}
 ```
 
 22. Qual o objetivo dos m´etodos getters? Crie um exemplo. 
@@ -213,5 +221,21 @@ public class Animal{
 
 32. Desenvolva o diagrama de classe dos códigos Java abaixo.
 <img> 
+33. O que ´e o estado de um objeto? Cite um exemplo com a classe Aluno com
+os atributos nome, idade, matr´ıcula e curso. Utilize o diagrama de estado de
+objeto.
+```
+R: 
+```
 
+33. Qual ´e o estado do objeto da classe Dog quando ´e inicializado? Desenvolva o
+diagrama de objetos.
+```
 
+```
+
+37. Analise o c´odigo abaixo. Verifique se existem problemas, caso sim, indique o
+problema e sugere as corre¸c˜oes.
+```
+
+```
