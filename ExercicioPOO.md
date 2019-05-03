@@ -120,7 +120,7 @@ public Aluno aluno = new Aluno();
 
 19. Qual é o objetivo do modificador de acesso public? 
 ```
-Tornar os métodos acessíveis
+Tornar os métodos e atributos acessíveis à inserção de dados do usuário. 
 ```
 
 20. Qual é o objetivo do modificador de acesso private? 
