@@ -1,7 +1,7 @@
 #questionário
 1. O que é um objeto?
 ```
-Qualquer coisa que tenha uma identidade.
+R: Qualquer coisa que tenha uma identidade.
 ```
 
 2. Identifique 3 características e 3 comportamentos de um carro. 
@@ -12,12 +12,12 @@ Comportamentos: em movimento, janelas abertas, ligado.
 
 3. No contexto de Orientação a Objetos, as características e comportamentos são chamados respectivamente de?
 ```
-Atributos e métodos.
+R: Atributos e métodos.
 ```
 
 4. Qual é o objetivo da programação orientada à objetos? 
 ```
-Reduzir a complexidade e aumentar a produtividade.
+R: Reduzir a complexidade e aumentar a produtividade.
 ```
 
 5. O que é abstração? Cite um exemplo.
@@ -61,7 +61,7 @@ R: Nome de atributos não podem ter números em sua composição, bem como podem
 
 11. Qual é o padrão utilizado para nomear os métodos? Cite um exemplo.
 ```
-R: Sintaticamente, é bastante difundida a forma com iniciais das palavras maiúsculas, e sem espaço, e em favor da organização do código, o método deve receber o nome de acordo com a sua finalidade. fazerCafé().
+R: Sintaticamente, é bastante difundida a forma com iniciais das palavras maiúsculas, e sem espaço, e em favor da organização do código, o método deve receber o nome de acordo com a sua finalidade. fazerCafé(), por exemplo.
 ```
 
 12. Qual opção apresenta corretamente o nome do método está vazio? 
@@ -76,7 +76,7 @@ R: Sintaticamente, é bastante difundida a forma com iniciais das palavras maiú
 
 13. No contexto de orientação à objetos, o que é um objeto? Em que momento existe um objeto? Quando ele deixa de existir?
 ```
-R: Um objeto é a instância de uma classe, e ele surge partindo de sua instanciação.
+R: Um objeto é a instância de uma classe, e ele surge partindo de sua instanciação, e deixa de existir ao término da classe.
 ```
 
 14. Qual é o objetivo do operador new?
@@ -86,12 +86,21 @@ R: Usado para instanciar um objeto novo.
 
 15. O que é o construtor? Qual é o seu objetivo? Qual deve ser o seu nome? Cite um exemplo.
 ```java
+// exemplo:
 public class Suco {
-    // Características referentes ao suco
+    private float quantidade_agua;
+    private int quantidade_fruta;
+    private String tipo_fruta;
+
+    private String Suco(String tipo_fruta, float quantidade_agua, int quantidade_fruta) {
+        this.tipo_fruta = "Laranja";
+        this.quantidade_fruta = 2;
+        this.quantidade_agua = 10,5;
+    }
 }
 ```
 ```
-R:
+R: O método construtor é chamado sempre que criamos um objeto, cujas características perpetuarão sempre que o objeto for executado.
 ```
 
 16. Caso o construtor da classe Aluno não for declarado, qual será o seu construtor? 
@@ -99,24 +108,56 @@ R:
 R: Construtor Padrão.
 ```
 
-17. Crie um exemplo de instanciação da classe Aluno. Utilize o construtor padrão. 
-18. O que é encapsulamento?
-19. Qual é o objetivo do modificador de acesso public? 
+17. Crie um exemplo de instanciação da classe Aluno. Utilize o construtor padrão.
+```java
+public Aluno aluno = new Aluno();
+```
 
+18. O que é encapsulamento?
+```
+
+```
+
+19. Qual é o objetivo do modificador de acesso public? 
+```
+Tornar os métodos acessíveis
+```
 
 20. Qual é o objetivo do modificador de acesso private? 
 ```
-R: Privar 
+R: Limitar o acesso apenas 
 ```
 
-21. Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno com o atributo matrícula. 
+21. Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno com o atributo matrícula.
+```
+
+```
+
 22. Qual o objetivo dos m´etodos getters? Crie um exemplo. 
-23. Qual o objetivo dos m´etodos setters? Crie um exemplo. 
+```
+R: Tem o intúito de apenas retornar o valor de um atributo.
+```
+```java
+public int getApto() {
+    return apto;
+}
+```
+
+23. Qual o objetivo dos m´etodos setters? Crie um exemplo.
+```
+R: Tem o intúito de alterar o valor de um atributo.
+```
+```java
+public void setApto(int apto) {
+    this.apto = apto
+}
+```
+
 24. O diagrama de classe UML ´e composto por 3 partes. O que vai em cada parte? 
 25. Qual ´e o padr˜ao utilizado para representar um atributo no diagrama de classe UML? Crie um exemplo.
 26. Qual ´e o padr˜ao utilizado para representar um m´etodo no diagrama de classe UML?Crie um exemplo.
 27. Como o construtor de uma classe pode ser diferenciado no diagrama de classe UML? Crie um exemplo.
-28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e m´etodos? Crie um exemplo.
+28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e métodos? Crie um exemplo.
 29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML. 
 30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o c´odigo Java correspondente.
 31. Desenvolva o c´odigo java das classes do apresentadas no diagrama de classes UML abaixo:
