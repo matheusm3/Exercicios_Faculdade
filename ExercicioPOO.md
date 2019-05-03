@@ -154,13 +154,63 @@ public void setApto(int apto) {
 ```
 
 24. O diagrama de classe UML ´e composto por 3 partes. O que vai em cada parte? 
+```
+```
+
 25. Qual ´e o padr˜ao utilizado para representar um atributo no diagrama de classe UML? Crie um exemplo.
+```
+```
+
 26. Qual ´e o padr˜ao utilizado para representar um m´etodo no diagrama de classe UML?Crie um exemplo.
+```
+```
+
 27. Como o construtor de uma classe pode ser diferenciado no diagrama de classe UML? Crie um exemplo.
+```
+```
+
 28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e métodos? Crie um exemplo.
-29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML. 
+```
+```
+
+29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML.
+```
+```
+
 30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o c´odigo Java correspondente.
 31. Desenvolva o c´odigo java das classes do apresentadas no diagrama de classes UML abaixo:
+```java
+public class Produto{
+    private String nome;
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+}
+
+public class Password{
+    private String value;
+    public String Password(String value){
+        this.password = password;
+    }
+    public boolean isEqual(Password p){
+        p = true;
+    }
+}
+
+public class Animal{
+    private boolean alive;
+    public void isAlive(){
+        this.alive = true;
+    }
+    private void die(){
+
+    }
+}
+```
+
 32. Desenvolva o diagrama de classe dos códigos Java abaixo.
 <img> 
 
