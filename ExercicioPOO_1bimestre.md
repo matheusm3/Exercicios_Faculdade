@@ -66,12 +66,12 @@ R: Sintaticamente, é bastante difundida a forma com iniciais das palavras maiú
 
 12. Qual opção apresenta corretamente o nome do método está vazio? 
 ```
-1. estaVazio 
-2. estaVazio 
-3. estavazio 
-4. EstaVazio 
-5. Estavazio 
-6. Esta vazio
+1. estaVazio <---
+2. _estaVazio
+3. estavazio
+4. EstaVazio
+5. Estavazio
+6. Esta_vazio
 ```
 
 13. No contexto de orientação à objetos, o que é um objeto? Em que momento existe um objeto? Quando ele deixa de existir?
@@ -190,16 +190,9 @@ R: "+" para público, "-" para privado e "#" para protegido.
 
 | Cliente                          |
 | -------------------------------- |
-| - nome: String                   |
-| - email: String                  | 
-| - telefone: String               | 
+| - nome: String <br> - email: String <br> - telefone: String |
 | -------------------------------- |
-| + getNome(): String              |
-| + setNome(nome:String)           |
-| + getTelefone(): String          |
-| + setTelefone(Telefone:String)   |
-| + getEmail(): String             |
-| + setEmail(email: String)        |
+| + getNome(): String <br> + setNome(nome:String) <br> + getTelefone(): String <br> + setTelefone(Telefone:String) <br> + getEmail(): String <br> + setEmail(email: String) |
 
 30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o código Java correspondente.
 ```java
@@ -229,7 +222,7 @@ public class Cliente{
 }
 ```
 
-31. Desenvolva o código java das classes do apresentadas no diagrama de classes UML abaixo:
+31. Desenvolva o código java das classes do apresentadas no diagrama de classes:
 ```java
 public class Produto{
     private String nome;
@@ -261,8 +254,6 @@ public class Animal{
     }
 }
 ```
-
-32. Desenvolva o diagrama de classe dos códigos Java abaixo.
 
 32. Desenvolva o diagrama de classe dos códigos Java abaixo.
 ```java
