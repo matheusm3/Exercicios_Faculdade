@@ -191,7 +191,6 @@ R: "+" para público, "-" para privado e "#" para protegido.
 | Cliente                          |
 | -------------------------------- |
 | - nome: String <br> - email: String <br> - telefone: String |
-| -------------------------------- |
 | + getNome(): String <br> + setNome(nome:String) <br> + getTelefone(): String <br> + setTelefone(Telefone:String) <br> + getEmail(): String <br> + setEmail(email: String) |
 
 30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o código Java correspondente.
@@ -290,29 +289,21 @@ public class Impressora{
 | Livro                            |
 | -------------------------------- |
 | - nome: String                   |
-| -------------------------------- |
-| + getNome(): String              |
-| + setNome(nome:String)           |
+| + getNome(): String <br> + setNome(nome:String) |
 
 | ContaCorrente                    |
 | -------------------------------- |
 | - saldo: double                  |
-| -------------------------------- |
-| + sacar(valor: double): String   |
-| + depositar(): String            |
-| + recalcularSaldo()              |
+| + sacar(valor: double): String <br> + depositar(): String <br> + recalcularSaldo() |
 
 | Par                              |
 | -------------------------------- |
-| + chave: double                  |
-| + valor: double                  |
-| -------------------------------- |
+| + chave: double <br> + valor: double |
 |                                  |
 
 | Impressora                       |
 | -------------------------------- |
 |                                  |
-| -------------------------------- |
 | + imprimir(documento: Documento) |
 
 
@@ -323,41 +314,30 @@ R: É o valor atribuído à seus atributos em determinado momento.
 
 | Aluno: 2122221     |
 | ------------------ |
-| nome: "Alberto"    |
-| idade: 19          |
-| matrícula: 2222222 |
-| curso: Sociologia  |
+| nome: "Alberto"<br> idade: 19 <br> matrícula: 2222222 <br> curso: Sociologia |
 
 34. Qual é o estado do objeto da classe Dog quando é inicializado? Desenvolva o diagrama de objetos.
 
 | Dog:               |
 | ------------------ |
-| years:             |
-| name:              |
-| alive:             |
+| years: <br> name: <br> alive: |
 
 35. Qual é o estado do objeto dog no final da execução do método main? Desenvolva o diagrama de objetos.
 
 | Dog:               |
 | ------------------ |
-| years: 10          |
-| name: "Spike"      |
-| alive: true        |
+| years: 10 <br> name: "Spike" <br> alive: true |
 
 36. Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva o diagrama de objetos.
 
 
 | Pug:               |
 | ------------------ |
-| years: 2           |
-| name: "Spoke"      |
-| alive: true        |
+| years: 2 <br> name: "Spoke" <br> alive: true |
 
 | Bulldog:           |
 | ------------------ |
-| years:             |
-| name: "Spike"      |
-| alive:             |
+| years: <br> name: "Spike" <br> alive: |
 
 
 37. Analise o código abaixo. Verifique se existem problemas, caso sim, indique o problema e sugere as correções.
