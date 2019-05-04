@@ -190,7 +190,7 @@ R: "+" para público, "-" para privado e "#" para protegido.
 
 29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos métodos getters e setters. Desenvolva o diagrama de classe UML. 
 
-
+```
 Cliente                         |
 --------------------------------|
 - nome: String                  |
@@ -203,7 +203,7 @@ Cliente                         |
 + setTelefone(Telefone:String)  |
 + getEmail(): String            |
 + setEmail(email: String)       |
-
+```
 
 
 29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML.
