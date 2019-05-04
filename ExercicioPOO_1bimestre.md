@@ -120,11 +120,7 @@ R: Une os atributos pertinentes à determinada implementação, e proteje a inte
 
 19. Qual é o objetivo do modificador de acesso public? 
 ```
-<<<<<<< HEAD:ExercicioPOO_1bimestre.md
-R: Tornar os métodos acessíveis
-=======
 Tornar os métodos e atributos acessíveis à inserção de dados do usuário. 
->>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 
 20. Qual é o objetivo do modificador de acesso private? 
@@ -145,11 +141,7 @@ public class Aluno {
 }
 ```
 
-<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 22. Qual o objetivo dos métodos getters? Crie um exemplo. 
-=======
-22. Qual o objetivo dos m´etodos getters? Crie um exemplo. 
->>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 R: Tem o intúito de apenas retornar o valor de um atributo.
 ```
@@ -183,26 +175,11 @@ R: Modificador de acesso ("+" para público, "-" para privado e "#" para protegi
 26. Qual é o padrão utilizado para representar um método no diagrama de classe UML? Crie um exemplo.
 ```
 R: Modificador de acesso, nome do método e entre parênteses o tipo parâmetro (se houver), seguido de dois pontos e o tipo de retorno (se houver). "-getEndereco(): String"
-=======
-24. O diagrama de classe UML ´e composto por 3 partes. O que vai em cada parte? 
-```
-```
-
-25. Qual ´e o padr˜ao utilizado para representar um atributo no diagrama de classe UML? Crie um exemplo.
-```
-```
-
-26. Qual ´e o padr˜ao utilizado para representar um m´etodo no diagrama de classe UML?Crie um exemplo.
-```
->>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 
 27. Como o construtor de uma classe pode ser diferenciado no diagrama de classe UML? Crie um exemplo.
 ```
-<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 R: Com a inserção de um sinal positivo ou negativo na frente do nome do atributo ou método. "-idade:int".
-=======
->>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 
 28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e métodos? Crie um exemplo.
@@ -213,12 +190,21 @@ R: "+" para público, "-" para privado e "#" para protegido.
 
 29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos métodos getters e setters. Desenvolva o diagrama de classe UML. 
 
-|                                                                      Cliente                                                                      |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
-| - nome: String - email: String - telefone: String                                                                                                 |
-| + getNome(): String + setNome(nome:String) + getTelefone(): String + setTelefone(Telefone:String)  + getEmail(): String + setEmail(email: String) |
-=======
-```
+
+Cliente                         |
+--------------------------------|
+- nome: String                  |
+- email: String                 | 
+- telefone: String              | 
+--------------------------------|
++ getNome(): String             |
++ setNome(nome:String)          |
++ getTelefone(): String         |
++ setTelefone(Telefone:String)  |
++ getEmail(): String            |
++ setEmail(email: String)       |
+
+
 
 29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML.
 ```
