@@ -115,12 +115,12 @@ public Aluno aluno = new Aluno();
 
 18. O que é encapsulamento?
 ```
-
+R: Une os atributos pertinentes à determinada implementação, e proteje a integridade dos atributos não necessários escondendo e impossibilitando a alteração.
 ```
 
 19. Qual é o objetivo do modificador de acesso public? 
 ```
-Tornar os métodos acessíveis
+R: Tornar os métodos acessíveis
 ```
 
 20. Qual é o objetivo do modificador de acesso private? 
@@ -129,39 +129,160 @@ R: Limitar o acesso apenas
 ```
 
 21. Como é aplicado o encapsulamento em uma classe? Considere a classe Aluno com o atributo matrícula.
+```java
+public class Aluno {
+    private String matricula;
+    public String getMatricula() {
+        return this.matricula;
+    }
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+}
 ```
 
-```
-
-22. Qual o objetivo dos m´etodos getters? Crie um exemplo. 
+22. Qual o objetivo dos métodos getters? Crie um exemplo. 
 ```
 R: Tem o intúito de apenas retornar o valor de um atributo.
 ```
 ```java
-public int getApto() {
-    return apto;
+public int getIdade() {
+    return idade;
 }
 ```
 
-23. Qual o objetivo dos m´etodos setters? Crie um exemplo.
+23. Qual o objetivo dos métodos setters? Crie um exemplo.
 ```
 R: Tem o intúito de alterar o valor de um atributo.
 ```
 ```java
-public void setApto(int apto) {
-    this.apto = apto
+public void setIdade(int apto) {
+    this.apto = idade;
 }
 ```
 
-24. O diagrama de classe UML ´e composto por 3 partes. O que vai em cada parte? 
-25. Qual ´e o padr˜ao utilizado para representar um atributo no diagrama de classe UML? Crie um exemplo.
-26. Qual ´e o padr˜ao utilizado para representar um m´etodo no diagrama de classe UML?Crie um exemplo.
+24. O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?
+```
+R: Nome, atributos e métodos.
+```
+
+25. Qual é o padrão utilizado para representar um atributo no diagrama de classe UML? Crie um exemplo.
+```
+R: Modificador de acesso ("+" para público, "-" para privado e "#" para protegido) nome do atributo : tipo. "+ endereco String"
+```
+
+26. Qual é o padrão utilizado para representar um método no diagrama de classe UML? Crie um exemplo.
+```
+R: Modificador de acesso, nome do método e entre parênteses o tipo parâmetro (se houver), seguido de dois pontos e o tipo de retorno (se houver). "-getEndereco(): String"
+```
+
 27. Como o construtor de uma classe pode ser diferenciado no diagrama de classe UML? Crie um exemplo.
+```
+R: Com a inserção de um sinal positivo ou negativo na frente do nome do atributo ou método. "-idade:int".
+```
+
 28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e métodos? Crie um exemplo.
-29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML. 
-30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o c´odigo Java correspondente.
-31. Desenvolva o c´odigo java das classes do apresentadas no diagrama de classes UML abaixo:
+```
+R: "+" para público, "-" para privado e "#" para protegido.
+```
+
+29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos métodos getters e setters. Desenvolva o diagrama de classe UML. 
+
+|                                                                      Cliente                                                                      |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+| - nome: String - email: String - telefone: String                                                                                                 |
+| + getNome(): String + setNome(nome:String) + getTelefone(): String + setTelefone(Telefone:String)  + getEmail(): String + setEmail(email: String) |
+
+
+30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o código Java correspondente.
+```java
+public class Cliente{
+    private String nome;
+    private String email;
+    private String telefone;
+
+    public String getNome(){
+        return nome;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public String getTelefone(){
+        return telefone;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+    }
+}
+```
+
+31. Desenvolva o código java das classes do apresentadas no diagrama de classes UML abaixo:
+```java
+public class Produto{
+    private String nome;
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+}
+
+public class Password{
+    private String value;
+    public String Password(String value){
+        this.password = password;
+    }
+    public boolean isEqual(Password p){
+        p = true;
+    }
+}
+
+public class Animal{
+    private boolean alive;
+    public void isAlive(){
+        this.alive = true;
+    }
+    private void die(){
+
+    }
+}
+```
+
 32. Desenvolva o diagrama de classe dos códigos Java abaixo.
-<img> 
-
-
+```java
+public class Livro{
+    private String nome;
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+}
+public class ContaCorrente{
+    private double saldo;
+    public double sacar(double valor){
+        return 0.0;
+    }
+    public void depositar(double valor){
+        this.saldo = saldo;
+    }
+    private void recalcularSaldo(){
+    }
+}
+public class Par{
+    public String chave;
+    public String valor;
+}
+public class Impressora{
+    public void imprimir(Documento documento){
+    }
+}
+```
