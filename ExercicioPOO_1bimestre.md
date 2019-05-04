@@ -161,7 +161,6 @@ public void setIdade(int apto) {
 }
 ```
 
-<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 24. O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?
 ```
 R: Nome, atributos e métodos.
@@ -184,94 +183,31 @@ R: Com a inserção de um sinal positivo ou negativo na frente do nome do atribu
 
 28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e métodos? Crie um exemplo.
 ```
-<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 R: "+" para público, "-" para privado e "#" para protegido.
 ```
 
 29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos métodos getters e setters. Desenvolva o diagrama de classe UML. 
 
-```
-Cliente                         |
---------------------------------|
-- nome: String                  |
-- email: String                 | 
-- telefone: String              | 
---------------------------------|
-+ getNome(): String             |
-+ setNome(nome:String)          |
-+ getTelefone(): String         |
-+ setTelefone(Telefone:String)  |
-+ getEmail(): String            |
-+ setEmail(email: String)       |
-```
+| Cliente                          |
+| -------------------------------- |
+| - nome: String                   |
+| - email: String                  | 
+| - telefone: String               | 
+| -------------------------------- |
+| + getNome(): String              |
+| + setNome(nome:String)           |
+| + getTelefone(): String          |
+| + setTelefone(Telefone:String)   |
+| + getEmail(): String             |
+| + setEmail(email: String)        |
 
-
-29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML.
-```
-```
-
-30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o c´odigo Java correspondente.
-31. Desenvolva o c´odigo java das classes do apresentadas no diagrama de classes UML abaixo:
-```java
-public class Produto{
-    private String nome;
-    public String getNome(){
-        return nome;
-    }
-    public void setNome(String nome){
-        this.nome = nome;
-    }
-}
-
-public class Password{
-    private String value;
-    public String Password(String value){
-        this.password = password;
-    }
-    public boolean isEqual(Password p){
-        p = true;
-    }
-}
-
-public class Animal{
-    private boolean alive;
-    public void isAlive(){
-        this.alive = true;
-    }
-    private void die(){
-
-    }
-}
-```
-
-32. Desenvolva o diagrama de classe dos códigos Java abaixo.
-<img> 
-33. O que ´e o estado de um objeto? Cite um exemplo com a classe Aluno com
-os atributos nome, idade, matr´ıcula e curso. Utilize o diagrama de estado de
-objeto.
-```
-R: 
-```
->>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
-
-33. Qual ´e o estado do objeto da classe Dog quando ´e inicializado? Desenvolva o
-diagrama de objetos.
-```
-
-```
-
-37. Analise o c´odigo abaixo. Verifique se existem problemas, caso sim, indique o
-problema e sugere as corre¸c˜oes.
-```
-
-<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o código Java correspondente.
 ```java
 public class Cliente{
     private String nome;
     private String email;
     private String telefone;
-
+    
     public String getNome(){
         return nome;
     }
@@ -284,11 +220,11 @@ public class Cliente{
     public void setNome(String nome){
         this.nome = nome;
     }
-    public void setEmail(String email){
-        this.email = email;
-    }
     public void setTelefone(String telefone){
         this.telefone = telefone;
+    }
+    public void setEmail(String email){
+        this.email = email;
     }
 }
 ```
@@ -327,6 +263,8 @@ public class Animal{
 ```
 
 32. Desenvolva o diagrama de classe dos códigos Java abaixo.
+
+32. Desenvolva o diagrama de classe dos códigos Java abaixo.
 ```java
 public class Livro{
     private String nome;
@@ -357,6 +295,95 @@ public class Impressora{
     }
 }
 ```
-=======
+
+| Livro                            |
+| -------------------------------- |
+| - nome: String                   |
+| -------------------------------- |
+| + getNome(): String              |
+| + setNome(nome:String)           |
+
+| ContaCorrente                    |
+| -------------------------------- |
+| - saldo: double                  |
+| -------------------------------- |
+| + sacar(valor: double): String   |
+| + depositar(): String            |
+| + recalcularSaldo()              |
+
+| Par                              |
+| -------------------------------- |
+| + chave: double                  |
+| + valor: double                  |
+| -------------------------------- |
+|                                  |
+
+| Impressora                       |
+| -------------------------------- |
+|                                  |
+| -------------------------------- |
+| + imprimir(documento: Documento) |
+
+
+33. O que é o estado de um objeto? Cite um exemplo com a classe Aluno com os atributos nome, idade, matrícula e curso. Utilize o diagrama de estado de objeto.
 ```
->>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
+R: É o valor atribuído à seus atributos em determinado momento.
+```
+
+| Aluno: 2122221     |
+| ------------------ |
+| nome: "Alberto"    |
+| idade: 19          |
+| matrícula: 2222222 |
+| curso: Sociologia  |
+
+34. Qual é o estado do objeto da classe Dog quando é inicializado? Desenvolva o diagrama de objetos.
+
+| Dog:               |
+| ------------------ |
+| years:             |
+| name:              |
+| alive:             |
+
+35. Qual é o estado do objeto dog no final da execução do método main? Desenvolva o diagrama de objetos.
+
+| Dog:               |
+| ------------------ |
+| years: 10          |
+| name: "Spike"      |
+| alive: true        |
+
+36. Qual é o estado do objeto pug e buldog após a execução da linha 6? Desenvolva o diagrama de objetos.
+
+
+| Pug:               |
+| ------------------ |
+| years: 2           |
+| name: "Spoke"      |
+| alive: true        |
+
+| Bulldog:           |
+| ------------------ |
+| years:             |
+| name: "Spike"      |
+| alive:             |
+
+
+37. Analise o código abaixo. Verifique se existem problemas, caso sim, indique o problema e sugere as correções.
+```java
+public class Cat{
+    private String name;
+    public double weight;
+// Getters e Setters suprimidos
+}
+public class Main{
+    public static void main(String args[]){
+        Cat c = new Cat();
+        c.weight = 3.5;
+        c.name = "BlackCat";
+}
+}
+```
+```
+R: O atributo "weight" na classe Cat está público e isso pode acarretar alterações indevidas no programa.
+```
