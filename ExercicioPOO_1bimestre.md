@@ -120,7 +120,11 @@ R: Une os atributos pertinentes à determinada implementação, e proteje a inte
 
 19. Qual é o objetivo do modificador de acesso public? 
 ```
+<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 R: Tornar os métodos acessíveis
+=======
+Tornar os métodos e atributos acessíveis à inserção de dados do usuário. 
+>>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 
 20. Qual é o objetivo do modificador de acesso private? 
@@ -141,7 +145,11 @@ public class Aluno {
 }
 ```
 
+<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 22. Qual o objetivo dos métodos getters? Crie um exemplo. 
+=======
+22. Qual o objetivo dos m´etodos getters? Crie um exemplo. 
+>>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 R: Tem o intúito de apenas retornar o valor de um atributo.
 ```
@@ -161,6 +169,7 @@ public void setIdade(int apto) {
 }
 ```
 
+<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 24. O diagrama de classe UML é composto por 3 partes. O que vai em cada parte?
 ```
 R: Nome, atributos e métodos.
@@ -174,15 +183,31 @@ R: Modificador de acesso ("+" para público, "-" para privado e "#" para protegi
 26. Qual é o padrão utilizado para representar um método no diagrama de classe UML? Crie um exemplo.
 ```
 R: Modificador de acesso, nome do método e entre parênteses o tipo parâmetro (se houver), seguido de dois pontos e o tipo de retorno (se houver). "-getEndereco(): String"
+=======
+24. O diagrama de classe UML ´e composto por 3 partes. O que vai em cada parte? 
+```
+```
+
+25. Qual ´e o padr˜ao utilizado para representar um atributo no diagrama de classe UML? Crie um exemplo.
+```
+```
+
+26. Qual ´e o padr˜ao utilizado para representar um m´etodo no diagrama de classe UML?Crie um exemplo.
+```
+>>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 
 27. Como o construtor de uma classe pode ser diferenciado no diagrama de classe UML? Crie um exemplo.
 ```
+<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 R: Com a inserção de um sinal positivo ou negativo na frente do nome do atributo ou método. "-idade:int".
+=======
+>>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
 ```
 
 28. Quais são os símbolos utilizados no diagrama de classe UML para representar os modificadores de acessos ao atributos e métodos? Crie um exemplo.
 ```
+<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 R: "+" para público, "-" para privado e "#" para protegido.
 ```
 
@@ -192,8 +217,68 @@ R: "+" para público, "-" para privado e "#" para protegido.
 |:-------------------------------------------------------------------------------------------------------------------------------------------------:|
 | - nome: String - email: String - telefone: String                                                                                                 |
 | + getNome(): String + setNome(nome:String) + getTelefone(): String + setTelefone(Telefone:String)  + getEmail(): String + setEmail(email: String) |
+=======
+```
 
+29. Considere a classe Cliente, com os atributos nome, email e telefone com os respectivos m´etodos getters e setters. Desenvolva o diagrama de classe UML.
+```
+```
 
+30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o c´odigo Java correspondente.
+31. Desenvolva o c´odigo java das classes do apresentadas no diagrama de classes UML abaixo:
+```java
+public class Produto{
+    private String nome;
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+}
+
+public class Password{
+    private String value;
+    public String Password(String value){
+        this.password = password;
+    }
+    public boolean isEqual(Password p){
+        p = true;
+    }
+}
+
+public class Animal{
+    private boolean alive;
+    public void isAlive(){
+        this.alive = true;
+    }
+    private void die(){
+
+    }
+}
+```
+
+32. Desenvolva o diagrama de classe dos códigos Java abaixo.
+<img> 
+33. O que ´e o estado de um objeto? Cite um exemplo com a classe Aluno com
+os atributos nome, idade, matr´ıcula e curso. Utilize o diagrama de estado de
+objeto.
+```
+R: 
+```
+>>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
+
+33. Qual ´e o estado do objeto da classe Dog quando ´e inicializado? Desenvolva o
+diagrama de objetos.
+```
+
+```
+
+37. Analise o c´odigo abaixo. Verifique se existem problemas, caso sim, indique o
+problema e sugere as corre¸c˜oes.
+```
+
+<<<<<<< HEAD:ExercicioPOO_1bimestre.md
 30. Considere a classe Cliente apresentado no Problema 29, e desenvolva o código Java correspondente.
 ```java
 public class Cliente{
@@ -286,3 +371,6 @@ public class Impressora{
     }
 }
 ```
+=======
+```
+>>>>>>> 442d67664a360a77ad9c8f8975fcedb6419dcf7c:ExercicioPOO.md
