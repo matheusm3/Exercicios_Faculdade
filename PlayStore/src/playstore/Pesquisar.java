@@ -6,6 +6,7 @@ public class Pesquisar {
 	static Scanner scan = new Scanner(System.in);
 	FeedPagina fp = new FeedPagina();
 		
+	// input do nome do app
 	public void pesquisaApp() {
 		System.out.println("Digite o nome do aplicativo");
 		String nome_app = scan.nextLine();

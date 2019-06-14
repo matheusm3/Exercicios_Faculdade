@@ -15,7 +15,7 @@ public class Download {
 	
 	public void executaDownload(String nome, boolean possui) {
 		if (possui == false) {
-			System.out.println("Fazendo download de ...");
+			System.out.println("Fazendo download de " + nome + "...");
 		} else {
 			System.out.println("Você já possui esse aplicativo.");
 		}
