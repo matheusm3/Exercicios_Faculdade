@@ -19,7 +19,7 @@ public class FeedPagina extends Aplicativo {
 		System.out.println(" ");
 		System.out.println("Deseja baixar? (1 - sim, 2 - não)");
 		int escolha = scan.nextInt();
-		boolean possui = true;
+		boolean possui = false;
 		
 		switch(escolha) {
 		case 1:
