@@ -10,6 +10,7 @@ public class Pesquisar {
 	public void pesquisaApp() {
 		System.out.println("Digite o nome do aplicativo");
 		String nome_app = scan.nextLine();
+		app.setNome_apk(nome_app);
 		FeedPagina.listarApk(nome_app);
 	}
 
